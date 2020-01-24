@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Battleships</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <input type="number" class="gridCols" value="3">
+            <input type="number" class="boxSize" value="60">
+            <button class="resize">resize</button>
+        </div>
+
+        <label for="playerOne">Spelare 1
+            <input type="radio" name="player" id="playerOne" checked>
+        </label>
+        <label for="playerTwo">Spelare 2
+            <input type="radio" name="player" id="playerTwo">
+        </label><br>
+        <label for="place">Placed
+            <input type="radio" name="type" id="place" checked>
+        </label>
+        <label for="remove">Removed
+            <input type="radio" name="type" id="remove">
+        </label><br>
+
+
+
+        <div class="gamearea"></div>
+
+        <ul class="boatSelection">
+            <li><label for="boatOne">Båt 1
+                    <input type="radio" name="boats" id="boatOne" checked>
+                </label>
+            </li>
+            <li>
+                <label for="boatTwo">Båt 2
+                    <input type="radio" name="boats" id="boatTwo">
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <script src="src/archetypes.js"></script>
+    <script src="src/functions.js"></script>
+    <script src="src/app.js"></script>
+</body>
+
+</html>

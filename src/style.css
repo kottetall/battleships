@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin: 10vh auto;
+    width: 80vw;
+    text-align: center;
+}
+
+.resize {
+    display: block;
+    margin: 1vh auto;
+    padding: 10px;
+}
+
+.gamearea {
+    display: grid;
+    grid-gap: 1px;
+
+    /* TILLFÄLLIGT */
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    /* TILLFÄLLIGT */
+
+}
+
+.box {
+    display: inline-block;
+    text-align: center;
+}
+
+.box:nth-child(odd):not(.exploded) {
+    background: #f00;
+}
+
+.box:nth-child(even):not(.exploded) {
+    background: #0f0;
+}
+
+.exploded[data-hit="false"] {
+    background: rgb(145, 143, 143);
+    opacity: 0.85;
+}
+
+.exploded[data-hit="true"] {
+    background: radial-gradient(rgb(223, 148, 98), rgb(241, 56, 56), rgb(255, 0, 0));
+    border: 3px solid #000;
+}
